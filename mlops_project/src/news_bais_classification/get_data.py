@@ -8,12 +8,11 @@ import kagglehub
 RAW_DATA_DIR = Path(__file__).parent.parent.parent / "data" / "raw"
 
 # Download latest version
-cache_path = kagglehub.dataset_download("navoneel/brain-mri-images-for-brain-tumor-detection")
+cache_path = kagglehub.dataset_download("mohamedhanyyy/chest-ctscan-images")
 
 # Copy to data/raw folder
 RAW_DATA_DIR.mkdir(parents=True, exist_ok=True)
-target_path = RAW_DATA_DIR / "brain-mri-images"
-
+target_path = RAW_DATA_DIR / "chest-ctscan-images"
 if target_path.exists():
     shutil.rmtree(target_path)
 shutil.copytree(cache_path, target_path)
