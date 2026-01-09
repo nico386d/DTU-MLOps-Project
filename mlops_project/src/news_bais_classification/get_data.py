@@ -5,7 +5,7 @@ from pathlib import Path
 import kagglehub
 
 # Define the target directory
-RAW_DATA_DIR = Path(__file__).parent.parent.parent.parent / "data" / "raw"
+RAW_DATA_DIR = Path(__file__).parent.parent.parent / "data" / "raw"
 
 # Download latest version
 cache_path = kagglehub.dataset_download("navoneel/brain-mri-images-for-brain-tumor-detection")

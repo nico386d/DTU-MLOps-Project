@@ -1,3 +1,9 @@
+# Data files (keep directory structure with .gitkeep)
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
 docs/site/
 
 # test cache
